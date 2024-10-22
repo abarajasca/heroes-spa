@@ -8,15 +8,23 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest --watchAll"
+    "test_watch": "jest --watchAll",
+    "test": "jest"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.13",
     "animate.css": "^4.1.1",
+    "babel-jest": "^29.7.0",
     "bootstrap": "^5.3.3",
-    "query-string": "^9.1.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.27.0",
+    "whatwg-fetch": "^3.6.20"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

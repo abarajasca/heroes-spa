@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useForm } from '../../hooks/useForm'
 import { useLocation, useNavigate } from 'react-router-dom';
-import queryString from 'query-string';
+import queryString  from '../helpers/queryString';
 import { getHeroesByName } from '../helpers';
 import { HeroCard } from '../components/HeroCard';
 
@@ -33,7 +33,7 @@ export const SearchPage = () => {
   const location = useLocation();
   
   const { q = '' } = queryString.parse( location.search );
-  
+    
   const heroes = getHeroesByName( q ); 
 
   const {formState, onChangeField} = useForm({ initialState: {searchText: `${q}` }});
